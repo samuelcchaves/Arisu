@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Menu - Restaurante Sushi & Portuguesa</title>
+
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+        />
+
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+            .menu-section {
+                margin-bottom: 2rem;
+            }
+            .menu-title {
+                border-bottom: 2px solid #6c757d;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            .price {
+                float: right;
+                font-weight: bold;
+            }
+            .nav-tabs .nav-link.active {
+                background-color: #ffc107;
+                color: #212529;
+            }
+            .tab-content {
+                background-color: #ffffff;
+                padding: 1.5rem;
+                border: 1px solid #dee2e6;
+                border-top: none;
+            }
+            .dark-mode {
+                background-color: #1c1c1e;
+                color: #f1f1f1;
+            }
+            .dark-mode .menu-title {
+                border-color: #ffc107;
+            }
+            .dark-mode .tab-content {
+                background-color: #2c2c2e;
+            }
+
+            .divider-custom {
+                margin: 1.25rem 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .divider-custom-line {
+                width: 100%;
+                max-width: 7rem;
+                height: 0.25rem;
+                background-color: rgb(230, 158, 64);
+                border-radius: 1rem;
+                border: 0;
+            }
+
+            .divider-custom-icon {
+                font-size: 1.5rem;
+                margin: 0 1rem;
+                filter: brightness(0) saturate(100%) invert(63%) sepia(92%)
+                    saturate(391%) hue-rotate(342deg) brightness(95%)
+                    contrast(89%);
+            }
+        </style>
+    </head>
+    <body class="dark-mode">
+        <div class="container py-5">
+            <h1 class="text-center mb-5">
+                Menu - Sushi & Culinária Portuguesa
+            </h1>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <div class="row">
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Couvert</h3>
+                    <p>Shot de Sakê <span class="price">2,00€</span></p>
+                    <p>Salada Sunomono <span class="price">3,50€</span></p>
+
+                    <h3 class="menu-title">Sopas</h3>
+                    <p>Sopa Miso <span class="price">2,50€</span></p>
+                    <p>Sopa de Peixe <span class="price">3,50€</span></p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Temaki</h3>
+                    <p>Salmão <span class="price">4,50€</span></p>
+                    <p>Salmão Philadelphia <span class="price">4,70€</span></p>
+                    <p>Salmão Manga <span class="price">5,00€</span></p>
+                    <p>Atum <span class="price">5,00€</span></p>
+                    <p>
+                        Temakis variados
+                        <span class="price">4,50€ e 5,50€</span>
+                    </p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Entradas Frias</h3>
+                    <p>Príncipe de Salmão <span class="price">4,50€</span></p>
+                    <p>
+                        Tacos de Salmão - 2 uni.
+                        <span class="price">6,50€</span>
+                    </p>
+                    <p>
+                        Tacos de Atum - 2 uni. <span class="price">7,00€</span>
+                    </p>
+                    <p>Edamame com Trufa <span class="price">5,00€</span></p>
+                    <p>
+                        Tartar de Salmão - 10 uni.
+                        <span class="price">7,00€</span>
+                    </p>
+                    <p>
+                        Tataki de Salmão - 10 uni.
+                        <span class="price">7,00€</span>
+                    </p>
+                    <p></p>
+                    <p>
+                        Tataki de Atum - 6 uni. <span class="price">8,00€</span>
+                    </p>
+                    <p>
+                        Tártaro de Robalo Branco
+                        <span class="price">8,00€</span>
+                    </p>
+                    <p>Tártaro de Salmão <span class="price">6,50€</span></p>
+                    <p>Tártaro de Atum <span class="price">7,50€</span></p>
+                    <p>Ceviche de Tigre <span class="price">8,00€</span></p>
+                    <p>Ceviche Tradicional <span class="price">6,50€</span></p>
+                    <p>
+                        Carpaccio Black Angus (Carne)<span class="price"
+                            >8,00€</span
+                        >
+                    </p>
+                    <p>Salada de Espinafres <span class="price">6,00€</span></p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Niguiris (2 unid.)</h3>
+                    <p>Salmão <span class="price">3,50€</span></p>
+                    <p>Atum <span class="price">4,00€</span></p>
+                    <p>Peixe Branco <span class="price">4,00€</span></p>
+                    <p>Unagi <span class="price">4,50€</span></p>
+                    <p>Ovas <span class="price">5,00€</span></p>
+                    <p>Cavala <span class="price">3,50€</span></p>
+                    <p>Atum Foie Gras <span class="price">6,00€</span></p>
+
+                    <h3 class="menu-title">Sashimi (5 uni.)</h3>
+                    <p>Salmão <span class="price">6,00€</span></p>
+                    <p>Atum <span class="price">7,00€</span></p>
+                    <p>Peixe Branco <span class="price">6,00€</span></p>
+                    <p>Salmão Trufado <span class="price">7,00€</span></p>
+                    <p>Mix/Carpaccio <span class="price">7,00€</span></p>
+                    <p>Moretaro <span class="price">7,50€</span></p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Entradas Quentes</h3>
+                    <p>
+                        Arroz Crocante com Tártaro de Salmão<span class="price"
+                            >6,50€</span
+                        >
+                    </p>
+                    <p>
+                        Crunch de Atum - 2 uni. <span class="price">6,00€</span>
+                    </p>
+                    <p>
+                        Posta de Black Code - 1 uni.
+                        <span class="price">9,00€</span>
+                    </p>
+                    <p>Rock de Camarão <span class="price">8,00€</span></p>
+                    <p>Gyozas - 4 uni. <span class="price">6,00€</span></p>
+                    <p>Panko - 2 uni. <span class="price">6,00€</span></p>
+                    <p>
+                        Tempura de Legumes - 6 uni.
+                        <span class="price">5,00€</span>
+                    </p>
+                    <p>Tempura de Cebola <span class="price">4,00€</span></p>
+                    <p>
+                        Tempura de Camarão com Amêndoas - 4 uni.
+                        <span class="price">8,00€</span>
+                    </p>
+                    <p>Camarão Rawal <span class="price">6,00€</span></p>
+                    <p>Salada de Frango <span class="price">5,00€</span></p>
+                    <p>Vieiras - 2 uni. <span class="price">7,00€</span></p>
+                    <p>Tori Karaage <span class="price">6,00€</span></p>
+
+                    <div class="row">
+                        <div class="menu-section col-lg-6">
+                            <h3 class="menu-title">Hosomaki - 6 uni.</h3>
+                            <p>Pepino <span class="price">5,90€</span></p>
+                            <p>Manga<span class="price">6,00€</span></p>
+                            <p>Abacate <span class="price">6,50€</span></p>
+                            <p>Atum<span class="price">6,90€</span></p>
+                            <p>Salmão<span class="price">6,90€</span></p>
+                            <p>Peixe Branco<span class="price">7,00€</span></p>
+                            <p>Enguia Fumada<span class="price">8,00€</span></p>
+                        </div>
+                        <div class="menu-section col-lg-6">
+                            <h3 class="menu-title">Hot Roll - 8 uni.</h3>
+                            <p>
+                                Salmão Philadelphia
+                                <span class="price">7,50€</span>
+                            </p>
+                            <p>Hot Spicy<span class="price">8,00€</span></p>
+                            <p>Crepe Roll<span class="price">8,50€</span></p>
+                            <p>Hot Arisu<span class="price">8,50€</span></p>
+                            <p>Hot Morango<span class="price">9,00€</span></p>
+                            <p>Hot Camarão<span class="price">9,50€</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Huramakis - 8 uni.</h3>
+                    <p>Veggie <span class="price">10,00€</span></p>
+                    <p>Atum Spicy <span class="price">10,50€</span></p>
+                    <p>Dragon de Atum <span class="price">11,50€</span></p>
+                    <p>Salmão <span class="price">11,00€</span></p>
+                    <p>Salmão Philadelphia<span class="price">11,50€</span></p>
+                    <p>Dragon de Salmão <span class="price">11,50€</span></p>
+                    <p></p>
+                    <p>Salmão Mango <span class="price">11,50€</span></p>
+                    <p>Salmão e Camarão <span class="price">11,50€</span></p>
+                    <p>Ebi Tempura <span class="price">11,50€</span></p>
+                    <p>Angus (Carne) <span class="price">12,00€</span></p>
+
+                    <h3 class="menu-title">Gunkans - 2 uni.</h3>
+                    <p>Veggie <span class="price">3,50€</span></p>
+                    <p>Salmão<span class="price">3,50€</span></p>
+                    <p>Atum com ovo<span class="price">4,00€</span></p>
+                    <p>Peixe Branco<span class="price">4,00€</span></p>
+                    <p>Atum<span class="price">3,50€</span></p>
+                    <p>Special Jô<span class="price">4,00€</span></p>
+                    <p>Arisu <span class="price">4,50€</span></p>
+                    <p>Aji <span class="price">4,00€</span></p>
+                    <p>Atum foie gras <span class="price">3,50€</span></p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Free Style</h3>
+                    <p>
+                        16 peças (com sashimi) <span class="price">17.00€</span>
+                    </p>
+                    <p>
+                        16 peças (sem sashimi)<span class="price">18.00€</span>
+                    </p>
+                    <p>
+                        18 peças (com sashimi)<span class="price">20.00€</span>
+                    </p>
+                    <p>
+                        18 peças (sem sashimi)<span class="price">21.00€</span>
+                    </p>
+                    <p>
+                        34 peças (com sashimi)<span class="price">35.00€</span>
+                    </p>
+                    <p>34 peças (sem sashimi)<span class="price"></span></p>
+                    <p>
+                        50 peças (com sashimi)<span class="price">55.00€</span>
+                    </p>
+                    <p>
+                        50 peças (sem sashimi)<span class="price">60,00€</span>
+                    </p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Sushi Quente</h3>
+                    <p>
+                        16 peças (só quentes) <span class="price">14,00€</span>
+                    </p>
+                    <h3 class="menu-title">Vegetariano</h3>
+                    <p>16 peças <span class="price">14,00€</span></p>
+                    <h3 class="menu-title">Infantil</h3>
+                    <p>12 peças <span class="price">14,00€</span></p>
+                    <h3 class="menu-title">Sushi Tradicional Japonês</h3>
+                    <p>
+                        22 peças (com sashimi) <span class="price">23,00€</span>
+                    </p>
+                    <p>
+                        22 peças (sem sashimi) <span class="price">24,50€</span>
+                    </p>
+                </div>
+
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Poké Bowls</h3>
+                    <p>Veggie<span class="price">9,50€</span></p>
+                    <p>Salmão<span class="price">10,00</span></p>
+                    <p>Camarão<span class="price">10,00€</span></p>
+                    <p>Tempura<span class="price">10,00€</span></p>
+                </div>
+                <div class="menu-section col-lg-6">
+                    <h3 class="menu-title">Massas</h3>
+                    <p>Yakisoba<span class="price">10,00€</span></p>
+                    <p>Yakiudon<span class="price">11,50€</span></p>
+                    <p>Yakishoba<span class="price">12,00€</span></p>
+                </div>
+
+                <div class="menu-section col-lg-12">
+                    <h3 class="menu-title">Culinária Portuguesa</h3>
+                    <p>Filete de Robalo <span class="price">18,00€</span></p>
+                    <p>Bacalhau Arisu <span class="price">17,50€</span></p>
+                    <p>
+                        Bife do Lombo Nacional (250 gr.)<span class="price"
+                            >21,50€</span
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+    </body>
+</html>
