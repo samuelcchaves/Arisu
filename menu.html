@@ -24,6 +24,16 @@
                 margin-bottom: 1rem;
                 font-weight: bold;
             }
+
+            #navbar {
+                color: white;
+                background: transparent
+                    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+                backdrop-filter: blur(10px);
+                width: 100%;
+                padding: 1rem;
+                transition: background-color 1s ease, opacity 1s ease; /* Smooth transition */
+            }
             .price {
                 float: right;
                 font-weight: bold;
@@ -76,6 +86,37 @@
         </style>
     </head>
     <body class="dark-mode">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container">
+                <a
+                    class="navbar-brand fw-bold display-4"
+                    id="navbar-title"
+                    href="index.html"
+                    >ARISU</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="index.html"
+                            >Home</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container py-5">
             <h1 class="text-center mb-5">
                 Menu - Sushi & Culinária Portuguesa
